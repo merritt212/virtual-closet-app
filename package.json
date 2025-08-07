@@ -1,0 +1,51 @@
+{
+    "package.json": {
+      "name": "virtual-closet-app",
+      "version": "1.0.0",
+      "private": true,
+      "dependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "lucide-react": "^0.263.1"
+      },
+      "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+      },
+      "eslintConfig": {
+        "extends": [
+          "react-app",
+          "react-app/jest"
+        ]
+      },
+      "browserslist": {
+        "production": [
+          ">0.2%",
+          "not dead",
+          "not op_mini all"
+        ],
+        "development": [
+          "last 1 chrome version",
+          "last 1 firefox version",
+          "last 1 safari version"
+        ]
+      },
+      "devDependencies": {
+        "react-scripts": "5.0.1",
+        "@types/react": "^18.0.0",
+        "@types/react-dom": "^18.0.0",
+        "tailwindcss": "^3.3.0",
+        "autoprefixer": "^10.4.14",
+        "postcss": "^8.4.24"
+      }
+    },
+    "public/index.html": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"icon\" href=\"%PUBLIC_URL%/favicon.ico\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta name=\"description\" content=\"Virtual Closet App - Manage your wardrobe digitally\" />\n    <title>Virtual Closet</title>\n  </head>\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n  </body>\n</html>",
+    "src/index.js": "import React from 'react';\nimport ReactDOM from 'react-dom/client';\nimport './index.css';\nimport App from './App';\n\nconst root = ReactDOM.createRoot(document.getElementById('root'));\nroot.render(\n  <React.StrictMode>\n    <App />\n  </React.StrictMode>\n);",
+    "src/index.css": "@tailwind base;\n@tailwind components;\n@tailwind utilities;\n\nbody {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  background-color: #f9fafb;\n}",
+    "tailwind.config.js": "/** @type {import('tailwindcss').Config} */\nmodule.exports = {\n  content: [\n    \"./src/**/*.{js,jsx,ts,tsx}\",\n  ],\n  theme: {\n    extend: {},\n  },\n  plugins: [],\n}",
+    "postcss.config.js": "module.exports = {\n  plugins: {\n    tailwindcss: {},\n    autoprefixer: {},\n  },\n}",
+    "vercel.json": "{\n  \"buildCommand\": \"npm run build\",\n  \"outputDirectory\": \"build\",\n  \"devCommand\": \"npm start\",\n  \"installCommand\": \"npm install\"\n}",
+    "README.md": "# Virtual Closet App\n\nA modern virtual wardrobe management app inspired by Clueless, featuring barcode scanning, outfit planning, and community suggestions.\n\n## Features\n\n- 📱 **Barcode Scanning**: Scan clothing tags to automatically add items\n- 👕 **Digital Closet**: Visual inventory of your clothing items\n- 🎯 **Outfit Planning**: Create and save outfit combinations\n- 👥 **Community Suggestions**: Browse public outfits for inspiration\n- 🧼 **Care Instructions**: Detailed washing and care information\n- 🌤️ **Weather Integration**: Weather-appropriate outfit suggestions\n\n## Getting Started\n\n### Prerequisites\n- Node.js 14 or higher\n- npm or yarn\n\n### Installation\n\n1. Clone the repository\n```bash\ngit clone <your-repo-url>\ncd virtual-closet-app\n```\n\n2. Install dependencies\n```bash\nnpm install\n```\n\n3. Start the development server\n```bash\nnpm start\n```\n\n4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.\n\n## Deployment\n\nThis app is optimized for deployment on Vercel:\n\n1. Push your code to GitHub\n2. Import your repository in Vercel\n3. Deploy with one click\n\n## Technologies Used\n\n- React 18\n- Tailwind CSS\n- Lucide React Icons\n- Camera API for barcode scanning\n\n## License\n\nMIT License"
+  }

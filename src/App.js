@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Camera, Plus, Shirt, Filter, Heart, Calendar, MapPin, Thermometer, Search, Home, Grid3x3, User, Settings, Zap, Users } from 'lucide-react';
+import { Camera, Plus, Shirt, Filter, Heart, Calendar, MapPin, Thermometer, Search, Home, Grid, User, Settings, Zap, Users } from 'lucide-react';
 
 const VirtualClosetApp = () => {
   const [activeTab, setActiveTab] = useState('closet');
@@ -121,7 +121,7 @@ const VirtualClosetApp = () => {
   ]);
 
   const categories = [
-    { id: 'all', name: 'All', icon: Grid3x3 },
+    { id: 'all', name: 'All', icon: Grid },
     { id: 'tops', name: 'Tops', icon: Shirt },
     { id: 'bottoms', name: 'Bottoms', icon: Shirt },
     { id: 'dresses', name: 'Dresses', icon: Shirt },
@@ -626,7 +626,7 @@ const VirtualClosetApp = () => {
               activeTab === 'outfits' ? 'text-blue-600' : 'text-gray-400'
             }`}
           >
-            <Grid3x3 className="w-6 h-6 mx-auto mb-1" />
+            <Grid className="w-6 h-6 mx-auto mb-1" />
             <span className="text-xs">Outfits</span>
           </button>
           <button
